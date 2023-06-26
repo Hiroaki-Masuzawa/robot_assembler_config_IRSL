@@ -60,7 +60,7 @@ ConnectingConstraintSettings:
       allowed-configuration: [fixed]
     -
       pair: [ROTOR_X, HORN_X]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, invert, rotate-90, rotate90, flip-x, flip-rotate90, flip-y, flip-rotate-90]
     -
       pair: [GROVE_SENSOR, GROVE_MOUNTER]
       allowed-configuration: [fixed, invert]
@@ -135,7 +135,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts (X-series)
-      parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
+      parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger, OrthogonalAxisParts]
     - name : Vehicle Parts
       parts: [vehicle-base, vehicle-base-pp,  vehicle-base-pp-r1, vehicle-base-ps, omni-wheel]
     - name: Sensor Parts
@@ -476,6 +476,36 @@ PartsSettings:
       types : [SC1]
       translation: [12.0, 8.0, 24.2]
       rotation: [1., 0., 0., 180.0]
+  -
+    type: OrthogonalAxisParts
+    # print-file: "servo_parts_x_series/ort_axis_parts.stl"
+    class: OrthogonalAxisParts
+    # description: test
+    visual:
+      -
+        type: mesh
+        url: "meshes_xseries/ort_axis_parts.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_xseries/ort_axis_parts.stl"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+      name: connetct_point1
+      types: [FRAME_BSIDE_X]
+      translation: [22.091, -11.0, 3.25]
+      rotation:  [-0.57735, -0.57735, 0.57735, 120.0]
+    -
+      name: connetct_point2
+      types: [FRAME_BSIDE_X]
+      translation: [-13.001, 17.0, 3.25] #-16.001, 17.0, 3.25
+      rotation: [1.0, 0.0, 0.0, -90.0]
   -
     type: FR12_H101_P
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
