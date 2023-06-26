@@ -225,7 +225,7 @@ PartsSettings:
       -
         name: horn
         types: [ROTOR_X]
-        translation: [0.0, 0.0, 0.0]
+        translation: [0.0, 0.0, 1.5]
         rotation: [1.0, 0.0, 0.0, 0.0]
         actuator-type: rotational
         axis: z
@@ -294,7 +294,7 @@ PartsSettings:
     -
       name: horn
       types : [HORN_X]
-      translation: [0.0, 0.0, 21.0]
+      translation: [0.0, 0.0, 19.5]
       rotation: [1., 0., 0., 180.0]
   -
     type: FR12_S102_P
@@ -499,7 +499,7 @@ PartsSettings:
     -
         name: side_connetct_point
         types: [HORN_X]
-        translation: [19.0, 0.0, 0.0]
+        translation: [20.5, 0.0, 0.0]
         rotation: [0.0, 1.0, 0.0, 90.0]
     -
       name: p1_0_0
@@ -584,7 +584,7 @@ PartsSettings:
     -
         name: side_connetct_point
         types: [HORN_X]
-        translation: [19.0, 0.0, 0.0]
+        translation: [20.5, 0.0, 0.0]
         rotation: [0.0, 1.0, 0.0, 90.0]
     -
       name: s1_0_0
@@ -979,7 +979,7 @@ PartsSettings:
     -
         name: connetct_point
         types: [HORN_X]
-        translation: [0.0, 0.0, 0.0]
+        translation: [0.0, 0.0, 1.5]
         rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: wheel-shaft
@@ -1009,7 +1009,7 @@ PartsSettings:
     -
         name: side_connetct_point
         types: [HORN_X]
-        translation: [19.0, 0.0, 0.0]
+        translation: [20.5, 0.0, 0.0]
         rotation: [0.0, 1.0, 0.0, 90.0]
     -
       name: p1_0_0
@@ -1094,7 +1094,7 @@ PartsSettings:
     -
         name: side_connetct_point
         types: [HORN_X]
-        translation: [19.0, 0.0, 0.0]
+        translation: [20.5, 0.0, 0.0]
         rotation: [0.0, 1.0, 0.0, 90.0]
     -
       name: s1_0_0
@@ -1370,7 +1370,7 @@ PartsSettings:
     -
         name: horn
         types: [HORN_X]
-        translation: [-19.0, 19.017, -0.013]
+        translation: [-20.5, 19.017, -0.013]
         rotation: [-0.70710678118655, 0, 0.70710678118655, -180]
   -
     type: ax-12a
