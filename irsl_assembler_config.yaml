@@ -492,9 +492,9 @@ PartsSettings:
         url: "meshes_xseries/ort_axis_parts.stl"
         scale : 0.001
     mass-param:
-      mass: 14.395
-      center-of-mass: [4.299E-07, 23.033, 0.00]
-      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+      mass: 10.832
+      center-of-mass: [12.10, 0.00, 2.917]
+      inertia-tensor: [2111.533,  -3.092E-10, 1279.342, -3.092E-10, 7335.36, 5.416E-10, 1279.342, 5.416E-10, 7396.827]
     connecting-points :
     -
       name: connetct_point1
