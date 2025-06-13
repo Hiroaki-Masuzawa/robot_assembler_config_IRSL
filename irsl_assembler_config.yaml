@@ -1346,6 +1346,10 @@ PartsSettings:
         url: "meshes/universal/attachment_socket_4_4_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
+      -
+        translation: [ 0.0, -38.25, -18.0 ]
+        box: [ 39.6, 6.0, 8.0 ]
+        color: [0.95, 0.95, 0.95]
     collision:
       -
         type: mesh
@@ -1361,6 +1365,10 @@ PartsSettings:
       -
         translation: [ 2.0, -42.75, 0 ]
         box: [ 32.0, 3.0, 32.0 ]
+      -
+        translation: [ 0.0, -38.25, -18.0 ]
+        box: [ 39.6, 6.0, 8.0 ]
+        color: [0.95, 0.95, 0.95]
     mass-param:
       mass: 5.695
       center-of-mass: [-6.586E-05, 0.00, 17.445]
